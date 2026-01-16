@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solidarité - Dons pour les personnes défavorisées</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <i class="fas fa-hands-helping"></i>
+                    Solidarité
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#causes">Causes</a></li>
+                    <li><a href="#faire-un-don">Faire un don</a></li>
+                    <li><a href="#impact">Notre impact</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Aidez-nous à lutter contre la pauvreté</h1>
+                <p>Chaque don compte. Ensemble, nous pouvons faire la différence dans la vie des personnes défavorisées et leur offrir un avenir meilleur.</p>
+                <div class="hero-buttons">
+                    <a href="#faire-un-don" class="btn">Faire un don maintenant</a>
+                    <a href="#causes" class="btn btn-secondary">Découvrir nos causes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="section" id="impact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Notre impact en chiffres</h2>
+                <p>Grâce à votre générosité, nous avons pu aider des milliers de personnes dans le besoin.</p>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">15,247</div>
+                    <div class="stat-text">Personnes aidées</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">€542,890</div>
+                    <div class="stat-text">Dons collectés</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">89</div>
+                    <div class="stat-text">Projets réalisés</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">32</div>
+                    <div class="stat-text">Pays touchés</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Causes Section -->
+    <section class="section causes" id="causes">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nos causes principales</h2>
+                <p>Découvrez nos principales causes et choisissez celle qui vous tient à cœur.</p>
+            </div>
+            
+            <div class="causes-grid">
+                <div class="cause-card">
+                    <img src="images/1.png" alt="Nourriture pour les nécessiteux" class="cause-img">
+                    <div class="cause-content">
+                        <h3>Nourriture pour tous</h3>
+                        <p>Fourniture de repas chauds et de colis alimentaires aux familles dans le besoin.</p>
+                        
+                        <div class="cause-info">
+                            <span>Objectif: €50,000</span>
+                            <span>Collecté: €38,450</span>
+                        </div>
+                        
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 77%"></div>
+                        </div>
+                        
+                        <a href="#faire-un-don" class="btn btn-accent">Soutenir cette cause</a>
+                    </div>
+                </div>
+                
+                <div class="cause-card">
+                    <img src="images/2.png" alt="Aide au logement" class="cause-img">
+                    <div class="cause-content">
+                        <h3>Logement d'urgence</h3>
+                        <p>Aide au logement temporaire pour les sans-abris et familles en situation critique.</p>
+                        
+                        <div class="cause-info">
+                            <span>Objectif: €75,000</span>
+                            <span>Collecté: €42,800</span>
+                        </div>
+                        
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 57%"></div>
+                        </div>
+                        
+                        <a href="#faire-un-don" class="btn btn-accent">Soutenir cette cause</a>
+                    </div>
+                </div>
+                
+                <div class="cause-card">
+                    <img src="images/3.png" alt="Éducation pour les enfants" class="cause-img">
+                    <div class="cause-content">
+                        <h3>Éducation pour les enfants</h3>
+                        <p>Fourniture de matériel scolaire et soutien éducatif pour les enfants défavorisés.</p>
+                        
+                        <div class="cause-info">
+                            <span>Objectif: €30,000</span>
+                            <span>Collecté: €22,100</span>
+                        </div>
+                        
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 74%"></div>
+                        </div>
+                        
+                        <a href="#faire-un-don" class="btn btn-accent">Soutenir cette cause</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Form -->
+    <section class="section" id="faire-un-don">
+        <div class="container">
+            <div class="section-title">
+                <h2>Faire un don</h2>
+                <p>Votre don, quel que soit son montant, peut changer des vies. Choisissez un montant ou saisissez le vôtre.</p>
+            </div>
+            
+            <div class="donation-form">
+                <form id="donationForm">
+                    <div class="form-group">
+                        <label for="donorName">Votre nom complet</label>
+                        <input type="text" id="donorName" class="form-control" placeholder="Jean Dupont" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="donorEmail">Votre adresse email</label>
+                        <input type="email" id="donorEmail" class="form-control" placeholder="jean.dupont@exemple.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Choisissez une cause</label>
+                        <select id="causeSelect" class="form-control">
+                            <option value="food">Nourriture pour tous</option>
+                            <option value="housing">Logement d'urgence</option>
+                            <option value="education">Éducation pour les enfants</option>
+                            <option value="general">Où le besoin est le plus urgent</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Montant du don</label>
+                        <div class="donation-amounts">
+                            <div class="amount-option">
+                                <input type="radio" id="amount10" name="donationAmount" value="10">
+                                <label for="amount10">€10</label>
+                            </div>
+                            <div class="amount-option">
+                                <input type="radio" id="amount25" name="donationAmount" value="25">
+                                <label for="amount25">€25</label>
+                            </div>
+                            <div class="amount-option">
+                                <input type="radio" id="amount50" name="donationAmount" value="50" checked>
+                                <label for="amount50">€50</label>
+                            </div>
+                            <div class="amount-option">
+                                <input type="radio" id="amount100" name="donationAmount" value="100">
+                                <label for="amount100">€100</label>
+                            </div>
+                            <div class="amount-option">
+                                <input type="radio" id="amountCustom" name="donationAmount" value="custom">
+                                <label for="amountCustom">Autre</label>
+                            </div>
+                        </div>
+                        
+                        <input type="number" id="customAmount" class="form-control" placeholder="Montant personnalisé (€)" style="display: none;">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="donorMessage">Message (optionnel)</label>
+                        <textarea id="donorMessage" class="form-control" rows="4" placeholder="Un message d'encouragement pour les personnes que vous aidez..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn" style="width: 100%;">Faire un don maintenant</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Solidarité</h3>
+                    <p>Nous œuvrons chaque jour pour réduire la pauvreté et aider les personnes les plus démunies à retrouver une vie digne.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Liens rapides</h3>
+                    <ul class="footer-links">
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#causes">Nos causes</a></li>
+                        <li><a href="#faire-un-don">Faire un don</a></li>
+                        <li><a href="#impact">Notre impact</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contactez-nous</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Rue de la Solidarité, 75000 Paris</li>
+                        <li><i class="fas fa-phone"></i> +33 1 23 45 67 89</li>
+                        <li><i class="fas fa-envelope"></i> contact@solidarite.org</li>
+                        <li><i class="fas fa-clock"></i> Lun-Ven: 9h-18h</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Solidarité. Tous droits réservés. Association reconnue d'utilité publique. BY BENJEDDOU </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-icon">
+                <i class="fas fa-heart"></i>
+            </div>
+            <h3>Merci pour votre générosité !</h3>
+            <p>Votre don a été enregistré avec succès. Vous recevrez un email de confirmation dans les prochaines minutes.</p>
+            <p>Grâce à vous, nous pourrons aider davantage de personnes dans le besoin.</p>
+            <button class="btn btn-accent close-modal">Continuer</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
